@@ -92,7 +92,31 @@
         </section>
 
     </main>
-
+<div>
+  <!-- Crea el formulario en HTML -->
+  <form method="post" action="submit.php" enctype="multipart/form-data">
+    <h1 class="fs-5 text-light fw-bold bg-dark py-4 text-center">SI QUERES SER PARTE DE NUESTRO MARAVILLOSO STAFF NO DUDES EN POSTULARTE</h1>
+    <label for="nombre">Nombre:</label><br>
+    <input type="text" id="nombre" name="nombre"><br>
+    <label for="correo">Correo electrónico:</label><br>
+    <input type="text" id="correo" name="correo"><br>
+    <label for="telefono">Teléfono:</label><br>
+    <input type="text" id="telefono" name="telefono"><br>
+    <p>Puesto al que se postula *</p>
+    <select name="position" required>
+     <option value="">--Seleccione una opción--</option>
+     <option value="profesor">Profesor</option>
+     <option value="asistente">Asistente</option>
+     <option value="entrenador">Entrenador</option>
+    </select>
+    <p>ingrese su Currículum (pdf) *</p>
+    <input type="file" name="resume" accept=".pdf" required>
+    <div class="fs-5 text-light fw-bold bg-dark py-4 text-center" >
+    <button type="submit">Enviar solicitud</button>
+    </div>
+  </form>
+</div>
+<script src="scrip/formulario.js"></script>
 
     <footer>
         <section class="container">
